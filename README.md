@@ -1,10 +1,7 @@
 - 👋 Hi, I’m Izhan Iftikhar
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning Full Stack Developer
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me izhandar2123gmail.com
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+- 🌱 I’m currently learning Full Stack Web Developer
+- 📫 How to reach me izhandar2123gmail.com 
+
 
 <!---
 izhan-20/izhan-20 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
