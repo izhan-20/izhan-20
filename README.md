@@ -1,6 +1,6 @@
 - 👋 Hi, I’m Izhan Iftikhar
 - 🌱 I’m currently learning Full Stack Web Developer
-- 📫 How to reach me izhandar2123gmail.com 
+- 📫 How to reach me izhandar@123gmail.com
 
 
 <!---
