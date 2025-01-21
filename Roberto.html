@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roberto</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+
+        .nav-bar {
+            display: flex;
+            width: 100%;
+            /* height: 80px; */
+        }
+
+        .nav-bar .nav-a {
+            margin-top: 40px;
+            margin-left: 40px;
+            flex: 1.1;
+
+
+        }
+
+        .nav-bar .nav-b {
+            margin-top: 50px;
+            margin-left: 40px;
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: "Poppins", sans-serif;
+            flex: 0.31;
+
+        }
+
+        .nav-bar:hover .nav-b:hover {
+            color: #afb4bf
+        }
+
+        .nav-bar .nav-b1 {
+            margin-top: 25px;
+            margin-left: 40px;
+            border: none;
+            font-size: 16px;
+            font-weight: 500;
+            flex: 0.2;
+
+        }
+
+        .nav-bar .nav-c {
+            margin-top: 15px;
+            margin-right: 100px;
+            height: 80px;
+            padding: 0px 40px;
+            line-height: 80px;
+            margin-left: 40px;
+            background-color: #1cc3b2;
+            color: white;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .nav-c:hover {
+            background: #2a303b;
+        }
+
+        .div {
+            background: url('18.png');
+            width: 100%;
+            height: 850px;
+            background-size: cover;
+
+        }
+
+        .div-h4 {
+            text-align: center;
+            color: white;
+            padding-top: 320px;
+        }
+
+        .div-h1 {
+            text-align: center;
+            color: white;
+            padding-top: 40px;
+            padding-bottom: 30px;
+            font-size: 75px;
+        }
+
+        .div button {
+            margin-left: 550px;
+            padding: 10px 40px;
+            background: transparent;
+            color: white;
+            border: 2px solid #1cc3b2;
+            font-size: 20px;
+        }
+
+        .div button:hover {
+            background-color: #1cc3b2;
+        }
+
+        .div1 {
+            display: flex;
+            justify-content: space-around;
+            background-color: white;
+            box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.15);
+            border-radius: 5px;
+            width: 1020px;
+            height: 150px;
+            margin-bottom: 30px;
+            margin-left: 150px;
+            margin-top: -90px;
+        }
+
+        .div-label {
+            color: black;
+            margin-top: 50px;
+            font-family: "Poppins", sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+
+        }
+
+        #label {
+            margin-top: 10px;
+            padding: 10px 50px 10px 10px;
+            border: 1px solid #ebebeb;
+            font-size: 13px;
+            font-family: inherit;
+            color: #495057;
+            border-radius: 4px;
+        }
+
+        #label1 {
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ebebeb;
+            font-size: 13px;
+            font-family: inherit;
+            color: #495057;
+            border-radius: 4px;
+        }
+
+        .div-btn {
+            color: black;
+            margin-top: 70px;
+
+
+        }
+
+        #btn {
+            padding: 15px 20px;
+            background-color: #1cc3b2;
+            border: none;
+            color: white;
+            font-size: 13px;
+            font-family: inherit;
+            text-transform: capitalize;
+            font-weight: 600;
+            border-radius: 2px;
+            letter-spacing: 2px;
+        }
+
+        #btn:hover {
+            background-color: #ffffff;
+            color: #1cc3b2;
+            border: 1px solid #ebebeb;
+        }
+
+        .about-us {
+            display: flex;
+        }
+
+        .part1 {
+            width: 570px;
+            height: 515px;
+            padding: 0px 15px;
+            margin-top: 100px;
+        }
+
+        .about-h4 {
+            color: #1cc3b2;
+            margin-left: 100px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .about-h2 {
+            margin-left: 100px;
+            margin-bottom: 50px;
+            line-height: 1.3;
+            font-size: 42px;
+            color: #2a303b;
+        }
+
+        .about-h5 {
+            margin-left: 100px;
+            line-height: 1.8;
+            color: #636a76;
+            font-weight: 400;
+            font-size: 1.25rem;
+        }
+
+        .about-p {
+            margin-left: 100px;
+            margin-top: 20px;
+            color: #636a76;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+
+        .about-s {
+            color: #1cc3b2;
+        }
+
+        .sign {
+            margin-left: 100px;
+            margin-top: 20px;
+        }
+
+        .part2 .img1 {
+            margin-left: 50px;
+            margin-top: 100px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+
+        .part2 .img2 {
+            margin-left: 50px;
+            border-radius: 6px;
+        }
+
+        .img-div2 .img3 {
+            margin-top: 100px;
+            margin-left: 10px;
+            border-radius: 6px;
+        }
+
+        .container1 {
+            display: flex;
+            justify-content: space-around;
+            height: 250px;
+            margin-top: 70px;
+
+        }
+
+        .box {
+            display: flex;
+        }
+
+        .box .box1 {
+            width: 200px;
+            height: 146px;
+            margin-left: 40px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 14px 5px rgba(20, 20, 20, 0.05);
+        }
+
+        .box1 .icon1 {
+            margin-left: 80px;
+            margin-top: 30px;
+        }
+
+        .box1 h5 {
+            color: #2a303b;
+            line-height: 1.3;
+            font-weight: 500;
+            margin-top: 10px;
+            text-align: center;
+            font-size: 22px;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .box1 h5:hover {
+            color: #1cc3b2;
+        }
+
+        .box .box2 {
+            width: 170px;
+            height: 146px;
+            margin-left: 40px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 14px 5px rgba(20, 20, 20, 0.05);
+        }
+
+        .box2 .icon1 {
+            margin-left: 70px;
+            margin-top: 30px;
+        }
+
+        .box2 h5 {
+            color: #2a303b;
+            line-height: 1.3;
+            font-weight: 500;
+            margin-top: 10px;
+            text-align: center;
+            font-size: 22px;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .box2 h5:hover {
+            color: #1cc3b2;
+        }
+
+        .img-form {
+            display: flex;
+        }
+
+        .img-div1 {
+            background-size: cover;
+        }
+
+        .form-div2 {
+            width: 630px;
+            height: 700px;
+            background-color: #0e2737;
+        }
+
+        .form-div2 h2 {
+            color: white;
+            font-size: 48px;
+            font-weight: 500;
+            line-height: 1.3;
+            text-align: center;
+            margin-top: 130px;
+        }
+
+        .form-div2 h3 {
+            color: #1cc3b2;
+            font-size: 36px;
+            margin-bottom: 25px;
+            margin-left: 90px;
+            margin-top: 15px;
+        }
+
+        .form-div2 .h3 {
+            color: white;
+            margin-bottom: 25px;
+            font-size: 22px;
+        }
+
+        .form-div2 .h5 {
+            color: white;
+            margin-left: 90px;
+            line-height: 2.6;
+            font-size: inherit;
+            font-weight: 500;
+            font-size: 18px;
+            /* padding-bottom: 30px; */
+        }
+
+        .btn-form {
+            margin-top: 40px;
+            margin-left: 90px;
+        }
+
+        .btn {
+            background-color: #1cc3b2;
+            border: none;
+            border-radius: 2px;
+            padding: 20px 40px;
+            font-size: 19px;
+            font-weight: 500;
+            color: white;
+
+        }
+
+        .testimonials {
+            display: flex;
+            width: 100%;
+
+        }
+
+        .test-img img {
+            border-radius: 4px;
+            margin-left: 70px;
+            margin-right: 40px;
+            margin-top: 90px;
+        }
+
+        .test-text h5 {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #1cc3b2;
+            margin-top: 110px;
+        }
+
+        .test-text h2 {
+            font-size: 42px;
+            line-height: 1.2;
+            color: #2a303b;
+            margin-top: 20px;
+        }
+
+        .test-text p {
+            color: #636a76;
+            margin-top: 50px;
+            font-size: 18px;
+            font-weight: 400;
+            font-family: "poppins", sans-serif;
+            line-height: 1.8;
+        }
+
+        .test-text h6 {
+            margin-top: 60px;
+            font-size: 18px;
+            font-weight: 500;
+            color: #2a303b;
+            font-family: "poppins", sans-serif;
+        }
+
+        .test-text .test-span {
+            color: #1cc3b2;
+        }
+
+        .img-section {
+            display: flex;
+            margin-top: 110px;
+        }
+
+        .img-section .section1,
+        .img-section .section2,
+        .img-section .section3 {
+            background: url('9.jpg.webp');
+            background-size: cover;
+            background-position: center;
+            width: 421px;
+            height: 800px;
+        }
+
+        .section1 button,
+        .section2 button,
+        .section3 button {
+            width: 100%;
+            height: 100px;
+            margin-top: 700px;
+            background-color: rgba(14, 39, 55, 0.7);
+            border: none;
+            color: #ffffff;
+            text-align: start;
+            line-height: 100px;
+            font-weight: 500;
+            font-size: 18px;
+            padding: 0px 30px;
+        }
+
+        .section1 button:hover,
+        .section2 button:hover,
+        .section3 button:hover {
+            background-color: #0e2737;
+        }
+
+        .img-section .section2 {
+            background: url('5.jpg.webp');
+            background-size: cover;
+            background-position: center;
+            width: 421px;
+            height: 800px;
+        }
+
+        .img-section .section3 {
+            background: url('6.jpg.webp');
+            background-size: cover;
+            background-position: center;
+            width: 421px;
+            height: 800px;
+        }
+
+        .blog {
+            margin-top: 80px;
+            text-align: center
+        }
+
+        .blog h5 {
+            color: #1cc3b2;
+            padding-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+            font-size: 16px;
+
+        }
+
+        .blog h2 {
+            font-size: 42px;
+            color: #2a303b;
+            font-weight: 500;
+        }
+
+        .our-blog {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .our-blog .box1 {
+            width: 370px;
+            height: 565px;
+            margin-top: 40px;
+            margin-bottom: 5%;
+
+        }
+
+        .our-blog .box1:hover,
+        .our-blog .box2:hover,
+        .our-blog .box3:hover {
+            margin-top: 30px;
+            transition-property: all;
+            transition: ease-in;
+        }
+
+        .box1 .img1 {
+            margin-bottom: 30px;
+
+        }
+
+        .box1 .a-1 {
+            color: #afb4bf;
+            font-size: 14px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-right: 30px;
+            margin-left: 30px;
+        }
+
+        .box1 .a-2 {
+            color: #1cc3b2;
+            font-size: 14px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .box1 h2 {
+            font-size: 22px;
+            font-weight: 500;
+            margin-left: 30px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+
+        }
+
+        .box1 h2:hover {
+            color: #1cc3b2;
+        }
+
+        .box1 p {
+            color: #636a76;
+            font-size: 18px;
+            font-weight: 400;
+            margin: 20px;
+            line-height: 1.7;
+            margin: 10px 30px;
+        }
+
+        .our-blog .box2 {
+            width: 370px;
+            height: 565px;
+            margin-top: 40px;
+            margin-bottom: 5%;
+        }
+
+        .box2 .img1 {
+            margin-bottom: 30px;
+
+        }
+
+        .box2 .a-1 {
+            color: #afb4bf;
+            font-size: 14px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-right: 30px;
+            margin-left: 30px;
+        }
+
+        .box2 .a-2 {
+            color: #1cc3b2;
+            font-size: 14px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .box2 h2 {
+            font-size: 22px;
+            font-weight: 500;
+            margin-left: 30px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+
+        }
+
+        .box2 h2:hover {
+            color: #1cc3b2;
+        }
+
+        .box2 p {
+            color: #636a76;
+            font-size: 18px;
+            font-weight: 400;
+            margin: 20px;
+            line-height: 1.7;
+            margin: 10px 30px;
+        }
+
+        .our-blog .box3 {
+            width: 370px;
+            height: 565px;
+            margin-top: 40px;
+            margin-bottom: 5%;
+
+        }
+
+        .box3 .img1 {
+            margin-bottom: 30px;
+
+        }
+
+        .box3 .a-1 {
+            color: #afb4bf;
+            font-size: 14px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-right: 30px;
+            margin-left: 30px;
+        }
+
+        .box3 .a-2 {
+            color: #1cc3b2;
+            font-size: 14px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .box3 h2 {
+            font-size: 22px;
+            font-weight: 500;
+            margin-left: 30px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+
+        }
+
+        .box3 h2:hover {
+            color: #1cc3b2;
+        }
+
+        .box3 p {
+            color: #636a76;
+            font-size: 18px;
+            font-weight: 400;
+            margin: 20px;
+            line-height: 1.7;
+            margin: 10px 30px;
+        }
+
+        .box-us {
+            width: 90%;
+            height: 180px;
+            margin: 0px 0px 50px 70px;
+            background-image: url('building.jpg');
+            background-color: rgba(14, 39, 55, 0.7);
+            background-blend-mode: overlay;
+            background-size: cover;
+
+        }
+
+        .contact-us .box-us h2 {
+            color: white;
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 1.3;
+            margin-left: 70px;
+            padding-top: 50px;
+        }
+
+        .contact-us .box-us h5 {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1.3;
+            margin-left: 70px;
+            padding-top: 10px;
+        }
+
+        .box-us-btn {
+            margin-left: 900px;
+            margin-top: -60px;
+        }
+
+        .box-btn {
+            background-color: #1cc3b2;
+            color: white;
+            font-weight: 500;
+            font-size: 18px;
+            padding: 15px 40px;
+            text-align: center;
+            border: none;
+            border-radius: 2px;
+        }
+
+        .end {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="nav-bar">
+        <a class="nav-a" href="">
+            <img src="logo.png.webp" width="145px" height="36px">
+        </a>
+        <a class="nav-b" href=""> Home</a>
+        <a class="nav-b" href=""> Rooms </a>
+        <a class="nav-b" href=""> About Us</a>
+        <select class="nav-b1">
+            <option> Pages </option>
+            <option> -Home</option>
+            <option> -Rooms</option>
+            <option> -Single Room</option>
+            <option> -About Us</option>
+            <option> -Blog</option>
+            <option> -Single Blog</option>
+            <option> -Contact</option>
+            <option> -Dropdown</option>
+            </option>
+        </select>
+        <a class="nav-b" href=""> News</a>
+        <a class="nav-b" href=""> Contact </a>
+        <a class="nav-c"> Book Now </a>
+
+    </div>
+    <div class="div">
+        <h4 class="div-h4"> HOTEL & RESORT </h4>
+        <h1 class="div-h1"> Welcome To Roberto</h1>
+        <button> Discover Now </button>
+    </div>
+    <div class="div1">
+        <div class="div-label">
+            <label> Check In</label> <br>
+            <input type="date" id="label">
+        </div>
+        <div class="div-label">
+            <label> Check Out</label> <br>
+            <input type="date" id="label">
+        </div>
+        <div class="div-label">
+            <label> Room</label> <br>
+            <select id="label1">
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>06</option>
+            </select>
+        </div>
+        <div class="div-label">
+            <label> Adult</label> <br>
+            <select id="label1">
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>06</option>
+            </select>
+        </div>
+        <div class="div-label">
+            <label> Children</label> <br>
+            <select id="label1">
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>06</option>
+            </select>
+        </div>
+        <div class="div-btn">
+            <button id="btn"> Check Availabilty</button>
+        </div>
+    </div>
+    <div class="about-us">
+        <div class="part1">
+            <h4 class="about-h4">About Us</h4>
+            <h2 class="about-h2">Welcome To <br>
+                Roberto Hotel Luxury</h2>
+            <h5 class="about-h5">With over 340 hotels worldwide, NH Hotel Group offers a wide variety of hotels catering
+                for a perfect stay no matter where your destination.</h5>
+            <p class="about-p">
+                Manger: <span class="about-s"> Michen Taylor </span>
+            </p>
+            <img class="sign" src="signature.png.webp" width="175px" height="37px">
+        </div>
+        <div class="part2">
+            <div class="img">
+                <div class="img-div">
+                    <img class="img1" src="13.jpg.webp" width="260px" height="205px"> </div>
+                <div class="img-div1">
+                    <img class="img2" src="14.jpg.webp" width="260px" height="205px">
+                </div>
+            </div>
+        </div>
+        <div class="img-div2">
+            <img class="img3" src="15.jpg.webp" width="260px" height="422px">
+        </div>
+
+    </div>
+    <div class="container1">
+        <div class="box">
+            <div class="box1">
+                <img class="icon1" src="icon-1.png.webp" width="40px" height="40px">
+                <h5> Transporation </h5>
+            </div>
+            <div class="box1">
+                <img class="icon1" src="icon-2.png.webp" width="40px" height="40px">
+                <h5> Reiseservice </h5>
+            </div>
+            <div class="box1">
+                <img class="icon1" src="icon-3.png.webp" width="40px" height="40px">
+                <h5> Spa Relaxtion</h5>
+            </div>
+            <div class="box2">
+                <img class="icon1" src="icon-4.png.webp" width="40px" height="40px">
+                <h5> Restaurant </h5>
+            </div>
+            <div class="box2">
+                <img class="icon1" src="icon-1.png.webp" width="40px" height="40px">
+                <h5> Bar & Drink </h5>
+            </div>
+        </div>
+    </div>
+    <div class="img-form">
+        <div class="img-div1">
+            <img src="16.jpg.webp" width="630px" height="700px">
+        </div>
+        <div class="form-div2">
+            <h2> Premium King Room </h2>
+            <h3> 400$
+                <span class="h3"> / Day</span>
+            </h3>
+            <h5 class="h5"> Size
+                <span>:30ft</span>
+            </h5>
+            <h5 class="h5"> Capacity
+                <span>:Max person 5</span>
+            </h5>
+            <h5 class="h5"> Bed
+                <span>:King Bed</span>
+            </h5>
+            <h5 class="h5"> Services
+                <span>: Wifi, Television, Bathroom</span>
+            </h5>
+            <div class="btn-form">
+                <a class="btn"> View Details</a>
+            </div>
+        </div>
+    </div>
+    <div class="testimonials">
+        <div class="test-img">
+            <img src="10.jpg.webp" width="525px" height="450px">
+        </div>
+        <div class="test-text">
+            <h5> testimonials </h5>
+            <h2>Our Guests Love Us</h2>
+            <p> “Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Dolor, ex quos. Alias a rem maiores,
+                possimus
+                dicta sit <br> distinctio quis iusto!”</p>
+            <h6> "Downey Sarah"
+                <span class="test-span">- CEO Deercreative</span>
+            </h6>
+        </div>
+    </div>
+    <div class="img-section">
+        <div class="section1">
+            <!-- <img src="9.jpg.webp" width="421px" height="800px"> -->
+            <button> Discover Now </button>
+        </div>
+        <div class="section2">
+            <!-- <img src="5.jpg.webp" width="421px" height="800px"> -->
+            <button> Discover Now </button>
+        </div>
+        <div class="section3">
+            <!-- <img src="6.jpg.webp" width="421px" height="800px"> -->
+            <button> Discover Now </button>
+        </div>
+    </div>
+    <div class="blog">
+        <h5>Our Blog</h5>
+        <h2> Latest News & Event </h2>
+    </div>
+    <div class="our-blog">
+        <div class="box1">
+            <img class="img1" src="2.jpg.webp" width="370px">
+            <a class="a-1">Jan 02, 2019</a>
+            <a class="a-2"> Event </a>
+            <h2>Learn How To Motivate Yourself</h2>
+            <p>How many free autoresponders have you tried? And how many emails did you get through using them?</p>
+        </div>
+        <div class="box2">
+            <img class="img1" src="3.jpg.webp" width="370px">
+            <a class="a-1">Jan 02, 2019</a>
+            <a class="a-2"> Event </a>
+            <h2>What If Let You Run The Hubble</h2>
+            <p>My point here is that if you have no clue for the answers above you probably are not operating a
+                followup.</p>
+        </div>
+        <div class="box3">
+            <img class="img1" src="4.jpg.webp" width="370px">
+            <a class="a-1">Jan 02, 2019</a>
+            <a class="a-2"> Event </a>
+            <h2>Six Pack Abs The Big Picture </h2>
+            <p>Some good steps to take to ensure you are getting what you need out of a autoresponder include…</p>
+        </div>
+    </div>
+    <div class="contact-us">
+        <div class="box-us">
+            <h2> Contact us now!</h2>
+            <h5>Contact (+12) 345-678-9999 to book directly or for advice</h5>
+            <div class="box-us-btn">
+                <button class="box-btn"> Contact Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="end">
+        <img src="p1.png.webp" width="60px" height="50px">
+        <img src="p2.png.webp" width="50px" height="50px">
+        <img src="p3.png.webp" width="41px" height="50px">
+        <img src="p4.png.webp" width="107px" height="50px">
+        <img src="p5.png.webp" width="56px" height="50px">
+    </div>
+
+
+</body>
+
+</html>
